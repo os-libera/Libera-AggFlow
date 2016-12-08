@@ -28,22 +28,17 @@ Code modifications
     * Modified the routine to find the physical switch and directly assign its id when the switch is a big-switch. (without using lUtils)
     * Added the OVXSwitch instance as a parameter of the lUtils instance.
   * OVXFlowMod.java
-	Added the routine - when the match has not the IP address information, finds the host which owned the IP addresses and puts the IP addresses information to the match field.
-	Added the routine - fetch the PhysicalFlowTable instance tied in the physical switch.
-	Added the routine - when the in-port and out-port are the edge, extends the matching field up to IP addresses.
-	Removed  the part of IP rewrite match and IP action.
-	Added the routine - in the core switches, checks the rules are duplicated and if it is not duplicated, then the flowmod is sent to the physical switch.
-	Added the method that checks the out-port is an edge.
-Added the method that finds IP addresses of the hosts using the MAC addresses
-
--OVXFlowRemoved.java
-	Added the routine that fetches the PhysicalFlowTable tied in the physical switch.
-	Added the routine that fetches the cookies 
-that aggregated to the cookie of the rule generating the FlowRemoved message and then each FlowRemoved message is sent to the controller.
-
--OVXPacketIn.java
-	Modified the routine – when the PacketIn message of the core switch arrives, the routine recovers the original address.
-
--SwitchRoute.java
-	Replaced the big-switch routine for IP rewriting with routine of mapping-less address virtualization.
-
+    * Added the routine - when the match has not the IP address information, finds the host which owned the IP addresses and puts the IP addresses information to the match field.
+    * Added the routine - fetch the PhysicalFlowTable instance tied in the physical switch.
+    * Added the routine - when the in-port and out-port are the edge, extends the matching field up to IP addresses.
+    * Removed  the part of IP rewrite match and IP action.
+    * Added the routine - in the core switches, checks the rules are duplicated and if it is not duplicated, then the flowmod is sent to the physical switch.
+    * Added the method that checks the out-port is an edge.
+    * Added the method that finds IP addresses of the hosts using the MAC addresses
+  * OVXFlowRemoved.java
+    * Added the routine that fetches the PhysicalFlowTable tied in the physical switch.
+    * Added the routine that fetches the cookies that aggregated to the cookie of the rule generating the FlowRemoved message and then each FlowRemoved message is sent to the controller.
+  * OVXPacketIn.java
+    * Modified the routine – when the PacketIn message of the core switch arrives, the routine recovers the original address.
+  * SwitchRoute.java
+    * Replaced the big-switch routine for IP rewriting with routine of mapping-less address virtualization.
