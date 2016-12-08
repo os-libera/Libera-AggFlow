@@ -2,6 +2,9 @@ AggFlow : SDN network hypervisor with enhanced address virtualziation
 ============
 - We improved address virtualization and flow rule management based on the representative SDN network hypervisor, OpenVirteX.
 - The main mechanisms of implementation can be found on our paper. (AggFlow in CAN’16).
+- Contacts
+  * Libera team (Korea University) : sdn_os@korea.ac.kr
+  * Main developer (Bong-yeol Yu) : koreagood13@gmail.com
 
 Functions
 -------------
