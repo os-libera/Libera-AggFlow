@@ -25,8 +25,8 @@ Code modifications
   * OVXLinkUtils.java : Modified the constructor to have the MAC addresses following the technique, and removed the part of adding the source MAC addresses action in the setLinkfiled method.
   * OVXNetwork.java : Added the methods that fetch host instance using the IP addresses and MAC addresses.
   * OVXActionOutput.java
-    -Modified the routine to find the physical switch and directly assign its id when the switch is a big-switch. (without using lUtils)
-    -Added the OVXSwitch instance as a parameter of the lUtils instance.
+    * Modified the routine to find the physical switch and directly assign its id when the switch is a big-switch. (without using lUtils)
+    * Added the OVXSwitch instance as a parameter of the lUtils instance.
   * OVXFlowMod.java
 	Added the routine - when the match has not the IP address information, finds the host which owned the IP addresses and puts the IP addresses information to the match field.
 	Added the routine - fetch the PhysicalFlowTable instance tied in the physical switch.
